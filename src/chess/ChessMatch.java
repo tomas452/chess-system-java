@@ -62,7 +62,7 @@ private	List<Piece> capturedPieces = new ArrayList<>();
 		
 		if(testCheck(currentPlayer)) {
 			undoMove(source, target, capturedPiece);
-			throw new ChessException("You can not put your self in check!");
+			throw new ChessException("You can not put yourself in check!");
 		}
 		check = (testCheck(opponent(currentPlayer))) ? true : false;
 		
